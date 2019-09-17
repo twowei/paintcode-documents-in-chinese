@@ -87,3 +87,87 @@ StyleKit 目录还包括了颜色、渐变、阴影和图片。
 ![](images/stylekit_export.png)
 
 首次导出里 StyleKit 之后，第二次导出就很容易了，你可以使用相同的方式。
+
+> Tovi注：以下内容涉及到 iOS 开发知识，我并不会，如果翻译有误，请大佬们指出。
+
+## 在 Xcode 里使用 StyleKit 类
+
+我们以 Objective-C 作为示例语言，不过 Swift 也几乎是一样的。
+
+在 Xcode 里使用 StyleKit 非常简单。首先，在你的 Xcode 项目中添加导出好的 StyleKit 类（`'.m'` 和 `'.h'` 文件）。然后，在你的源代码中使用 `'import'` 命令将 StyleKit 类导入。
+
+``` Objective-c
+#import "YourStyleKitName.h"
+```
+
+或者你可以将 `'import'` 命令放到你预编译的头部（`'.pch'` 文件）。使用这种方式，你可以在你所有的源文件中使用 StyleKit，而不用给每个文件添加 `'import'` 命令。
+
+最后，通过简单调用其中的类方法，来实际使用它的 StyleKit 类，就像这样：
+
+``` Objective-c
+[YourStyleKitName drawYourCanvas];
+```
+
+通常，您可以在一些 UIView 的 overriden draiRect 方法中执行此操作。有关更多信息，参阅以下 StyleKit 基础教程。要获取 StyleKit color，你可以这样做：
+
+``` Objective-c
+UIColor* color = YourStyleKitName.yourColor;
+```
+
+其他库项，例如渐变和阴影，也是用类似的方式。
+
+注意，当以编程方式使用 StyleKit 时，你永远不需要实例化 StyleKit 类 —— 所有获得你的绘图和库项的方法都是类方法，这意味着你可以在类上调用这些方法，而不是在类的实例上。
+
+还要注意，如果你的画布使用了 `'Frames'` 或 `'Variables'`，那么它生成的类方法会携带参数，从而使你可以轻松地绘制参数化绘图。
+
+## 生成 UIImage 的画布
+
+对于生成 UIImage 的画布，在画布设置中可以使用更多的选项。例如，你可以指定可伸缩 `UIImage` 所必须的 `Cap Insets`。
+
+![](images/capinsets.png)
+
+你还可以指定 UIImage 的缩放行为（具体地说，由 Cap Insets 定义的中心区域是应该平铺还是拉伸）。
+
+还可以设置 UIImage 的渲染模式。一些 iOS 的系统控件如 UITabBarItem 使用 UIImage 来绘制图标，但是只使用这些 UIImage 作为模板，在这些模板上使用系统范围内生效的效果。 这种行为通常可以通过切换到 `'Origin'` 渲染模式来防止。
+
+下面是只有一个被设置为生成 绘方法和图片方法 画布的 StyleKit 的样子：
+
+![](images/stylekit_image_code.png)
+
+## 在 XIB 和 故事板中使用生成 UIImage 的画布
+
+在上面的代码中，你可以看到被设置为生成 UIImage 方法的画板，同时也会生成一个特殊的 IBOutletCollection。
+
+如果你在 XIB 和 Storyboard 中创建 StyleKit 类的实例对象，你就可以将画布生成的 IBOutletCollection 链接到其他对象。
+
+![](images/stylekit_instance.png)
+
+在 XIB 和 Storyboard 中添加了实例对象之后，不要忘记将它们的类改为 StyleKit 的类。
+
+![](images/stylekit_xcode.png)
+
+StyleKit 会使用画布生成的 UIImage 作为参数，在你添加到 IBOutletCollection 的对象上 自动调用 `'setImage:‘`方法。
+
+你还可以通过 `'setImage:‘` 方法将在 PaintCode 中绘制的图像可视化地分别给借口中的对象来使用它。在画布设置中，你还可以指定应该使用 `'setSelectedImage:'` 方法。
+
+当您希望可视化地自定义接口对象(如 UITabBarItem)时，这些 IBOutletCollections 非常有用了。
+
+下面是在模拟器中将画布的 IBOutletCollection 连接到 UITabBarItem 的结果：
+
+![](images/stylekit_simulator.png)
+
+注意：要使用 UITabBarItem，你还必须将其标识符设置为 Xcode Interface Builder 中的 Custom。
+重要：所有公共 StyleKit 方法都是类方法。这意味着你通常不许啊哟创建 StyleKit 实例来使用它。实际上，你只需要创建一个是累类使用 IBOutletCollection 功能。
+
+## StyleKit 设置
+
+要打开 StyleKit 设置，点击工具栏下方的的 StyleKit 标签。设置通常会出现在右边的检查器里。你可以设置：
+
+- 生成的 StyleKit 类的名称
+- 你的项目名称
+- 你的名字
+- 公司名称
+
+这些信息将被用于生成每个 StyleKit 文件顶部的注释里。
+
+![](images/stylekit_settings.png)
