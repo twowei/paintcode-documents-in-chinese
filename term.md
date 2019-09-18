@@ -19,4 +19,8 @@ the built-in operations：内置的颜色运算
 
 popup button：弹出按钮
 
+popover：弹框
+
 color knob：颜色球
+
+
