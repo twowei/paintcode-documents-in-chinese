@@ -96,7 +96,7 @@
 
 在由画布生成的绘方法中，变量会转换成参数：
 
-``` objective-c
+```objective-c
 - (void)drawRateButtonWithRadius: (CGFloat)radius title: (NSString*)title pressed: (BOOL)pressed;
 ```
 
