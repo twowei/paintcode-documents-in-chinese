@@ -8,7 +8,7 @@ PaintCode 是一个可以将你的绘图实时转换成 Objective-C、 Swift 和
 
 窗口顶部的**工具栏**包含了你会经常使用的绘图工具。
 
-![Toolbar](images/toolbar.png)
+![Toolbar](./images/toolbar.png)
 
 ## 标签和 StyleKit
 
