@@ -1,4 +1,4 @@
-# Android
+# [Android](_cover.md)
 
 PaintCode 可以生成在 Android 应用开发中使用的绘图代码。
 

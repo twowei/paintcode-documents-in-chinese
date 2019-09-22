@@ -1,4 +1,4 @@
-# StyleKits
+# [StyleKits](_cover.md)
 
 `'StyleKits'` 是更好的将生成的代码集成到你的 `'Xcode'` 项目中的方式。
 

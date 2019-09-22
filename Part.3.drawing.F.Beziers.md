@@ -1,4 +1,4 @@
-# Beziers
+# [Beziers](_cover.md)
 
 > Tovi注： Bezier，贝塞尔形状、图形，PaintCode 文档里这个词会频繁出现，而且 PaintCode 工具栏里，菜单里都是以 Bezier 出现。
 

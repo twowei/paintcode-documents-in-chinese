@@ -1,4 +1,4 @@
-# 形状
+# [形状](_cover.md)
 
 ![形状](./images/shapes.png)
 

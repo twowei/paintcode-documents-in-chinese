@@ -1,4 +1,4 @@
-# 形状和组浏览器
+# [形状和组浏览器](_cover.md)
 
 ![浏览器](images/objectbrowser.png)
 

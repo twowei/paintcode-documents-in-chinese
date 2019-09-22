@@ -1,4 +1,4 @@
-# 动态形状
+# [动态形状](_cover.md)
 
 [▶️动态形状](https://youtu.be/-R5De4v75iA)
 

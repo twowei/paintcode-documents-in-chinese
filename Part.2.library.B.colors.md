@@ -1,4 +1,4 @@
-# 颜色
+# [颜色](_cover.md)
 
 PaintCode 里有 3 种类型的颜色：
 

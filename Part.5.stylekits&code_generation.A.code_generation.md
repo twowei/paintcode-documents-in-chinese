@@ -1,4 +1,4 @@
-# 代码导出
+# [代码导出](_cover.md)
 
 ![Code](./images/codegen.png)
 

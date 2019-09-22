@@ -1,4 +1,4 @@
-# 概述
+# [概述](_cover.md)
 
 ![PaintCode 界面](./images/paintcode_ui.png)
 
