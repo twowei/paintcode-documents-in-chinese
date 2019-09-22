@@ -2,7 +2,7 @@
 
 在 PaintCode 里，你可以使用我们简单的表达式语言来定义依赖于其它变量的变量。它支持许多的数学计算、逻辑函数和许多程序员期待的运算符。它的语法是 `C` 和 `JavaScript` 的子集，非常简单。
 
-[视频](https://youtu.be/Shu5gqfJOWw)
+[▶️变量和表达式](https://youtu.be/Shu5gqfJOWw)
 
 只需要创建一个类型为 `'expression'` 的新变量，并将表达式写入文本框。新变量的值会被自动计算和更新。
 
@@ -165,7 +165,7 @@ makeColor(1, 1, 0, 1)
 
 你的颜色名可能会包含空格和符号（比如 'Dialog Background Color'）,但是在脚本中引用他们的时候，使用 "净化" 过的形式，就像下面例子中所示：
 
-![例子](images/shot2.png)
+![例子](./images/shot2.png)
 
 更多例子：
 

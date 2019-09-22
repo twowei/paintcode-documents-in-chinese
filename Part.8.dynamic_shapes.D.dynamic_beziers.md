@@ -2,7 +2,7 @@
 
 对于像矩形和椭圆这类简单的形状，使用**缩放约束条件**来指定他们的缩放行为就很有效了。不过对于 `bezier` 你需要一个更好的方式来控制它。
 
-![](images/dynamicbezierexample.png)
+![动态 Bezier](./images/dynamicbezierexample.png)
 
 区别在于：
 
@@ -11,7 +11,7 @@
 
 由于控制点没有宽高，所以它的约束条件控制就相对简单：
 
-![](images/controlpointconstraints.png)
+![控制点]](./images/controlpointconstraints.png)
 
 可以设置4种约束：left, right, top, bottom。每一个都可以是固定的或者是拉伸的。
 
@@ -23,4 +23,4 @@
 
 可以通过给单个控制点设置设置缩放约束条件来做出复杂的缩放效果。此外，由于你可以使用多个 `Frame` （甚至是嵌套的 `Frame`），要创建有趣的效果时就很简单了。
 
-![](images/dynamicbezierexample2.png)
+![动态效果](./images/dynamicbezierexample2.png)

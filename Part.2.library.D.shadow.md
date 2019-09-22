@@ -6,7 +6,7 @@ PaintCode 支持填充、描边和文字的阴影。对于填充和文字，还�
 
 要使用一个阴影，**拖拽** 它的连接点到一个画板的形状中：
 
-![](images/shadow_assign_connection.png)
+![设置连接](images/shadow_assign_connection.png)
 
 或者，你可以在检查器的**阴影弹出按钮**里选择一个阴影。
 

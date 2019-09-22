@@ -1,7 +1,8 @@
-# Beziers 
-> Tovi注： Bezier，贝塞尔形状、图形，PaintCode 文档里这个词会频繁出现，后面还是不翻译了，而且 PaintCode 工具蓝里，菜单里都是以 Bezier 出现。
+# Beziers
 
-![](images/beziers.png)
+> Tovi注： Bezier，贝塞尔形状、图形，PaintCode 文档里这个词会频繁出现，而且 PaintCode 工具栏里，菜单里都是以 Bezier 出现。
+
+![Bezier](./images/beziers.png)
 
 ## 绘制直线
 
@@ -13,7 +14,7 @@
 - 你可以选择继续重复前面的两个步骤来绘制折线
 - 你也可以选择通过单击第一个控制点，来绘制一个多边形
 
-注意：在松开鼠标前移动指针会使线条弯曲，这样就画不直了。
+注意：在松开鼠标前移动指针会使线条弯曲，这样线就画不直了。
 
 ## 绘制曲线
 
@@ -24,13 +25,13 @@
 - 单击要结束曲线的点
 - 按住鼠标按钮，将指针移动到新的位置后松开鼠标
 - 可以选择继续重复前面的两个步骤来绘制更复杂的曲线
-- 也可以通过单击第一控制点来封闭由曲线包围的区域
+- 也可以通过单击第一控制点来封闭由曲线
 
 你可以随时通过释放鼠标按钮而不移动指针来绘制一个直线线段（或者只有一个曲线手柄的曲线段）
 
 ## 编辑 Bezier
 
-![](images/edit.png)
+![编辑 Bezier](./images/edit.png)
 
 有三种编辑 `'Bezier'` 的方式：
 
@@ -48,27 +49,27 @@
 - 按 `'Option'`、`'Command'`、`'Shift'` 或者 `'Control'` 来激活拓展
 - 现在，当你移动鼠标你应该就能看到可能的 Bezier 的拓展的黄色提示
 - 将指针移动到想要的位置然后单击，根据你什么时候松开鼠标，你可以绘制出直线或者曲线。
-- 或者，你也可以点击 Bezier 的另一段来封闭它
+- 或者，你也可以点击 Bezier 的另一端来封闭它
 
 ## 在 Bezier 的中间添加新的控制点
 
-![](images/split1.png)
+![分离](./images/split1.png)
 
-要在 Bezier 的中间添加新的控制点，只需要在你想要添加的地方单击一下。这将在那个点上将曲线分成两条曲线，保持原来的曲率。
+要在 Bezier 的中间添加新的控制点，只需要在你想要添加的地方单击一下，这将在那个点上将曲线按照原来的曲率分成两条曲线。
 
 ## 在添加新控制点时控制吸附行为
 
 默认下，当你添加控制点时它们会吸附到（水平和垂直的） Bezier 的其它控制点上。要抑制这个吸附，按住 `'Command'`。
 
-PaintCode 会试图将控制点吸附到那些可以保持形状锐利的坐标上，恰当地将点对齐到点网格。如果你不想要这个行为，那么在放置控制点的时候按住 `'Control'`。在两种行为之间的是 `'Option'` 键 —— 它将会强制控制点的坐标是整数点或者0.5点。
+PaintCode 会试图将控制点吸附到那些可以保持形状清晰的坐标上，恰当地将点对齐到点网格。如果你不想要这个行为，那么在放置控制点的时候按住 `'Control'`。在两种行为之间的是 `'Option'` 键 —— 它将会强制控制点的坐标是整数点或者0.5点。
 
 通常需要画一条水平线、垂直线或对角线。要限制新控制点的位置来画这种类型的线，按住 `'Shift'`。
 
-![](images/shift_guides.png)
+![Shift](./images/shift_guides.png)
 
 ## 调整控制点位置
 
-你可以通过拖拽来调整单个控制点的位置。PaintCode 会将控制点对齐到一定的位置上来帮你绘制锐利的图形。这种行为取决于描边和描边宽度设置，因此最好在移动控制点之前将它们设为 最终值。
+你可以通过拖拽来调整单个控制点的位置。PaintCode 会将控制点对齐到一定的位置上来帮你绘制清晰的图形。这种行为取决于描边和描边宽度设置，因此最好在移动控制点之前将它们设为 最终值。
 
 不过不用太担心，即使你忘了这么做，你也可以在之后进行调整。但是如果，举个例子，如果你画了一个描边为 1 的 Bezier，然后再将它改为 2，你的绘图看起来可能就没那么好了。要解决这个问题，你必须重新手动调整控制点，PaintCode 不会在你改变描边设置时重新排列这些点。
 
@@ -78,7 +79,7 @@ PaintCode 会试图将控制点吸附到那些可以保持形状锐利的坐标�
 
 当按下 `'Control'` 键，移动控制点的吸附行为就会消失 —— 你可以在任意位置释放控制点。
 
-![](images/beziersnapping.png)
+![Bezier 吸附](./images/beziersnapping.png)
 
 PaintCode 为了协助你画图，当你移动控制点的时候，它还会自动对齐其它的控制点。但是你也可以通过按下 `'Command'` 来关闭这个行为。
 
@@ -92,9 +93,9 @@ PaintCode 为了协助你画图，当你移动控制点的时候，它还会自�
 
 ## 调整曲线手柄
 
-![](images/bezierhandles1.png)
+![Bezier 手柄](./images/bezierhandles1.png)
 
-可以通过移动曲线手柄来调整它们。 如果控制点和它的两个手柄是对齐的，那么当当你移动其中一个手柄的时候另一个也会一起移动来保持对齐。如果要抑制这个行为，那么在调整时按住 `'Option'`。
+可以通过移动曲线手柄来调整它们。 如果控制点和它的两个手柄是对齐的，那么当你移动其中一个手柄的时候另一个也会一起移动来保持对齐。如果要抑制这个行为，那么在调整时按住 `'Option'`。
 
 另一方面，如果控制点和它的两个手柄不是对齐的，那么两个手柄则会独立移动。这种情况下，你可以按住 `'Option'` 来强制它们对齐。
 
@@ -102,56 +103,56 @@ PaintCode 为了协助你画图，当你移动控制点的时候，它还会自�
 
 ## 控制曲率
 
-控制点并不总是同时具有两个曲线手柄。 例如，对于直线或折线，控制点没有任何曲线句柄。 您可以在任何时候添加和删除曲线手柄。
+控制点并不总是同时具有两个曲线手柄。 例如，对于直线或折线，控制点没有任何曲线句柄。 你可以在任何时候添加和删除曲线手柄。
 
-要移除曲线手柄，选择然后按 `'Delete'` 或 `'Back Space'` 删除它。
+要移除曲线手柄，选中它然后按 `'Delete'` 或 `'Back Space'` 删除。
 
 要给一个控制点添加曲线手柄，从控制手柄菜单里面选择 `'Make Point Round'`。要移除曲线手柄，那么就选 `'Make Point Sharp'` 选项。
 
-![](images/curvature1.png)
+![曲率](./images/curvature1.png)
 
-![](images/curvature2.png)
+![曲率](./images/curvature2.png)
 
-![](images/curvature3.png)
+![曲率](./images/curvature3.png)
 
 ## 封闭 Bezier
 
 - 选择一个端点控制点
-- 按 `'Option'`、`'Command'`、`'Shift'` 或者 `'Control'` 来激活拓展
+- 按 `'Option'`、`'Command'`、`'Shift'` 或者 `'Control'` 来激活编辑
 - 选择另一个端点。当你将指针悬停上去的时候你会看到一个封闭 Bezier 的预览
 
-![](images/closebezier1.png)
+![封闭 Bezier](./images/closebezier1.png)
 
-![](images/closebezier2.png)
+![封闭 Bezier](./images/closebezier2.png)
 
 ## 控制点菜单
 
 控制点除了可以控制曲率之外，它的菜单提供了更多好用的功能来 移除控制点、打开路径、复制路径，甚至扭转轮廓的方向，这些对于你用 PaintCode 生成 Bezier 动画曲线是很有帮助的。
 
-![](images/point_context_menu.png)
+![点菜单](./images/point_context_menu.png)
 
 ## 线段的菜单
 
 Bezier 的线段也有一个属于它的菜单。你可以通过它来删除一个线段或者在线段的任意点上将其拆分。
 
-![](images/segment_context_menu.png)
+![线段菜单](./images/segment_context_menu.png)
 
 ## 布尔预算
 
-PaintCode 支持3 种布尔运算：`'Union'`、`'Intersection'` 和 `'Difference'`（分别是联合、相交和相减）。要使用他们很简单。首先在画板中选中两个或两个以上的形状。然后在工具栏中选择相应的操作图标，或者也可以在应用程序菜单里选择 `'Selection / Union'`、`'Selection / Intersection'` 和 `'Selection / Difference'` 中的一个选项。
+PaintCode 支持 3 种布尔运算：`'Union'`、`'Intersection'` 和 `'Difference'`（联合、相交和相减）。要使用他们很简单。首先在画板中选中两个或两个以上的形状。然后在工具栏中选择相应的操作图标，或者也可以在应用程序菜单里选择 `'Selection / Union'`、`'Selection / Intersection'` 和 `'Selection / Difference'` 中的一个选项。
 
-![](images/boolean1.png)
+![布尔](./images/boolean1.png)
 
 PaintCode 会直接生成目标形状。这个形状会继承它们最底部的那个形状的的外观设置（比如描边和填充）所有的原始图形会保持不变。
 
-![](images/boolean2.png)
+![布尔](./images/boolean2.png)
 
-给 Bezier 使用变换
+## 给 Bezier 应用变换
 
-就想其它所有的形状和组一样，Bezier 也可以应用 Rotaion、Scale 和 Offset 这些变换。对于 Bezier， 甚至还可以给控制点应用变换。这将重新计算所有控制点的位置，并从 Bezier 中移除变换。
+就像其它所有的形状和组一样，Bezier 也可以应用 **Rotaion**、**Scale** 和 **Offset** 这些变换。对于 Bezier， 甚至还可以给控制点应用变换。这将重新计算所有控制点的位置，并从 Bezier 中移除变换。
 
-![](images/apply_transform1.png)
+![应用变换1](./images/apply_transform1.png)
 
 应用了变换的 Bezier：
 
-![](images/apply_transform2.png)
+![应用变换2](./images/apply_transform2.png)
