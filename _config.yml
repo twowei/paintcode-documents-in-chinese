@@ -39,4 +39,4 @@ include:
   - Part.8.dynamic_shapes.E.dynamic_shapes&transforms.md
   - Part.9.using_symbols.md
 
-theme: jekyll-theme-cayman
+theme: jekyll-theme-slate
