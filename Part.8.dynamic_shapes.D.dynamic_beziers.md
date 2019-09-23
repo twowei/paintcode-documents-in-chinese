@@ -11,7 +11,7 @@
 
 由于控制点没有宽高，所以它的约束条件控制就相对简单：
 
-![控制点]](./images/controlpointconstraints.png)
+![控制点](./images/controlpointconstraints.png)
 
 可以设置4种约束：left, right, top, bottom。每一个都可以是固定的或者是拉伸的。
 

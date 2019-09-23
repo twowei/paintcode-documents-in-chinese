@@ -26,7 +26,7 @@
 
 最后，你可以在检查器中使用**填充弹出按钮**来选择合适的填充：
 
-![图片设置弹框]](./images/image_assign_popup.png)
+![图片设置弹框](./images/image_assign_popup.png)
 
 ![图片设置弹框菜单](./images/image_assign_popup_context.png)
 

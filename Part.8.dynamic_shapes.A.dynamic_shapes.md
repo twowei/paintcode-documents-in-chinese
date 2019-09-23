@@ -27,7 +27,7 @@ PaintCode 有个非常好的功能叫 **动态形状**。通过它你可以定�
 
 在生成的代码中，一个 `Frame` 对应一个方法参数：
 
-![Frame 参数]](./images/framerect.png)
+![Frame 参数](./images/framerect.png)
 
 动态形状从包围它的 `Frame` 里推导出它的大小和坐标。
 

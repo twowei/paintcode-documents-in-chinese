@@ -6,7 +6,7 @@
 
 变量可以是，数字、文字、布尔值（逻辑值）、位置、大小、矩形，甚者是颜色、阴影和渐变。你可以在画布中给你的形状连接变量。
 
-![变量]](./images/variables1.png)
+![变量](./images/variables1.png)
 
 举个例子，你可以创建一个叫 `'radius'` 的数字变量，然后将它连接到多个圆角矩形的圆角属性中。当你改变 `radius` 变量的值，它所连接的形状的圆角就会立即更新！
 
@@ -64,7 +64,7 @@
 
 当你取消了变量的连接，连接指示按钮就会被换成原先的文字输入框：
 
-![取消连接]](./images/connection_button_disconnected.png)
+![取消连接](./images/connection_button_disconnected.png)
 
 ## 通过使用变量来控制一个形状的可见性
 

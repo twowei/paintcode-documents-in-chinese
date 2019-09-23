@@ -31,7 +31,7 @@
 
 你还可以设置应该对添加到这个`Image Method`生成的 `'IBOutletColection'` 中的对象，调用哪一个 `'Selector'`。
 
-![画布 StyleKit 设置]](./images/canvas_stylekit_settings.png)
+![画布 StyleKit 设置](./images/canvas_stylekit_settings.png)
 
 PaintCode 还生成[缩放的绘图方法](Part.5.stylekits&code_generation.C.resizing_drawing_methods.md)，这将允许你在保持长宽比例同时将画布绘制成不同目标矩形大小。
 
