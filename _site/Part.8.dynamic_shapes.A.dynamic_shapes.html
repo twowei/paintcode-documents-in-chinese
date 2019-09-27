@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!--
+    So Simple Jekyll Theme 3.1.3
+    Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+    Free for personal and commercial use under the MIT license
+    https://github.com/mmistakes/so-simple-theme/blob/master/LICENSE
+-->
+<html lang="en-US" class="no-js">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+
+  
+    <title>动态形状</title>
+    <meta name="description" content="">
+    <link rel="canonical" href="http://localhost:4000/Part.8.dynamic_shapes.A.dynamic_shapes.html">
+  
+
+  <script>
+    /* Cut the mustard */
+    if ( 'querySelector' in document && 'addEventListener' in window ) {
+      document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + 'js';
+    }
+  </script>
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+</head>
+
+
+  <body class="layout--page  动态形状">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#primary-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+    <header class="masthead">
+  <div class="wrap">
+    
+    
+    
+      
+        <div class="site-title animated fadeIn"><a href="/">paintcode-documents-in-chinese</a></div>
+      
+      <p class="site-description animated fadeIn" itemprop="description"></p>
+    
+  </div>
+</header><!-- /.masthead -->
+
+
+    <main id="main" class="main-content" aria-label="Content">
+  <article>
+    
+
+    <div class="page-wrapper">
+      <header class="page-header">
+        
+        
+          <h1 id="page-title" class="page-title">动态形状</h1>
+        
+      </header>
+      <div class="page-content">
+        <h1 id="动态形状"><a href="/_cover.html">动态形状</a></h1>
+
+<p><a href="https://youtu.be/-R5De4v75iA">▶️动态形状</a></p>
+
+<p>PaintCode 有个非常好的功能叫 <strong>动态形状</strong>。通过它你可以定义形状缩放的时候的行为，然后这个动态行为在生成的代码里会被编译。</p>
+
+<p><img src="/images/dynamicshapes.png" alt="动态形状" /></p>
+
+<p><code class="highlighter-rouge">'frame'</code> 和 <code class="highlighter-rouge">constraint</code> （框架和约束）在除了调整大小之外还有着更广泛的用途。你可以通过它们以许多有趣而且有用的方式来改变形状：</p>
+
+<p><img src="/images/dynamicbezierexample2.png" alt="动态 Bezier 例子" /></p>
+
+<p>要使用动态形状：</p>
+
+<ul>
+  <li>在形状周围画一个 <code class="highlighter-rouge">Frame</code></li>
+  <li>定义当包围形状的 <code class="highlighter-rouge">Frame</code> 在调整大小时，形状的行为</li>
+</ul>
+
+<p>当然，一个 <code class="highlighter-rouge">Frame</code> 可以包含多个形状。</p>
+
+<h2 id="frame框架">Frame，框架</h2>
+
+<p><img src="/images/frameicon.png" alt="Frame 图标" /></p>
+
+<p>要创建一个 <code class="highlighter-rouge">Frame</code>，只需要从工具栏里选择它的图标，然后在画布里拖拽。</p>
+
+<p><code class="highlighter-rouge">Frame</code> 不是形状。它们自己本身不绘任何东西。但是他们会影响生成的代码。而且还会影响它包含形状的动态行为。</p>
+
+<p>在生成的代码中，一个 <code class="highlighter-rouge">Frame</code> 对应一个方法参数：</p>
+
+<p><img src="/images/framerect.png" alt="Frame 参数" /></p>
+
+<p>动态形状从包围它的 <code class="highlighter-rouge">Frame</code> 里推导出它的大小和坐标。</p>
+
+<p>当你在画布中缩放一个 <code class="highlighter-rouge">Frame</code>， 所以相关的形状也会被缩放/移动。要抑制这个表现，在移动的同时按住 <code class="highlighter-rouge">Command</code> 键。</p>
+
+
+        
+      </div>
+    </div>
+  </article>
+</main>
+
+
+    <footer id="footer" class="site-footer">
+  <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+<div class="copyright">
+    
+      <p>&copy; 2019 paintcode-documents-in-chinese. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/mmistakes/so-simple-theme" rel="nofollow">So Simple</a>.</p>
+    
+  </div>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.12/js/all.js"></script>
+
+
+  </body>
+
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!--
+    So Simple Jekyll Theme 3.1.3
+    Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+    Free for personal and commercial use under the MIT license
+    https://github.com/mmistakes/so-simple-theme/blob/master/LICENSE
+-->
+<html lang="en-US" class="no-js">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+
+  
+    <title>画布设置</title>
+    <meta name="description" content="">
+    <link rel="canonical" href="http://localhost:4000/Part.4.canvases&tabs.C.canvas_settings.html">
+  
+
+  <script>
+    /* Cut the mustard */
+    if ( 'querySelector' in document && 'addEventListener' in window ) {
+      document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + 'js';
+    }
+  </script>
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+</head>
+
+
+  <body class="layout--page  画布设置">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#primary-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+    <header class="masthead">
+  <div class="wrap">
+    
+    
+    
+      
+        <div class="site-title animated fadeIn"><a href="/">paintcode-documents-in-chinese</a></div>
+      
+      <p class="site-description animated fadeIn" itemprop="description"></p>
+    
+  </div>
+</header><!-- /.masthead -->
+
+
+    <main id="main" class="main-content" aria-label="Content">
+  <article>
+    
+
+    <div class="page-wrapper">
+      <header class="page-header">
+        
+        
+          <h1 id="page-title" class="page-title">画布设置</h1>
+        
+      </header>
+      <div class="page-content">
+        <h1 id="画布设置"><a href="/_cover.html">画布设置</a></h1>
+
+<h2 id="画布设置-1">画布设置</h2>
+
+<p>要打开画布设置，在工作区里点击画布的标题。或者你也可以在形状和组浏览器里点击它。</p>
+
+<p>然后画布的相关设置就会出现在检查器里了：</p>
+
+<p><img src="/images/canvas_settings_2.png" alt="画布设置" /></p>
+
+<h2 id="给画布取名字">给画布取名字</h2>
+
+<p>在检查器最顶部的文字输入框里，你可以修改画布的名字。这个名字会被生成的绘方法使用。或者将画布导出为图片的时候也会使用到。</p>
+
+<h2 id="修改画布大小">修改画布大小</h2>
+
+<p>要改变画布的大小，只需要在文字输入框里输入相应的大小。或者，你也可以在工作区里通过拖动画布的边缘来修改画布的大小。注意，这个只有当你没有选择到画布里的形状时才会起作用。</p>
+
+<h2 id="修改-stylekit-设置">修改 StyleKit 设置</h2>
+
+<p>通过 StyleKit 按钮，你可以修改一个画布的代码生成设置。最重要的是，你可以选择画布要生成哪些：</p>
+
+<ul>
+  <li>不生成方法</li>
+  <li>只生成（空的）绘方法（<code class="highlighter-rouge">'Drawing Method'</code>）</li>
+  <li>实时生成图片的方法（<code class="highlighter-rouge">'UIImage'</code> 或 <code class="highlighter-rouge">'NSImage'</code>）</li>
+  <li>生成以上两种</li>
+</ul>
+
+<p><img src="/images/canvas_stylekit_popup.png" alt="画布设置弹框" /></p>
+
+<p>当你选择了画布要返回图片的方法（<code class="highlighter-rouge">Image Method</code>）时，而且目标代码是 iOS 时，会出现更多的设置。这些设置比如，如果你想要的话你可以设置生成图片的 <code class="highlighter-rouge">Cap Insets</code>，还有就是选择图片的渲染模式。</p>
+
+<p>你还可以设置应该对添加到这个<code class="highlighter-rouge">Image Method</code>生成的 <code class="highlighter-rouge">'IBOutletColection'</code> 中的对象，调用哪一个 <code class="highlighter-rouge">'Selector'</code>。</p>
+
+<p><img src="/images/canvas_stylekit_settings.png" alt="画布 StyleKit 设置" /></p>
+
+<p>PaintCode 还生成<a href="/Part.5.stylekits&amp;code_generation.C.resizing_drawing_methods.html">缩放的绘图方法</a>，这将允许你在保持长宽比例同时将画布绘制成不同目标矩形大小。</p>
+
+<h2 id="修改画布的背景色">修改画布的背景色</h2>
+
+<p>要修改画布的底色，只需要在检查器里点击颜色按钮槽。注意，这个底色对于生成的代码没有任何影响。</p>
+
+<p>还要注意，当你导出有背景色的 TIFF、PDF 或者 PNG 时，这个颜色会被导出。如果要导出透明背景的图，那么将底色设置为黑色或者白色，或者在导出绘图的时候关闭 <code class="highlighter-rouge">'Export Background'</code> 复选框。</p>
+
+<h2 id="修改画布的背景图片">修改画布的背景图片</h2>
+
+<p>首先要确保图片槽旁边的复选框已经被钩上。然后，拖放一个你想要图片到图片槽中。你还可以使用下方的控件偏移背景。</p>
+
+<h2 id="显示隐藏网格和更改它的颜色">显示/隐藏网格，和更改它的颜色</h2>
+
+<p>要显示/隐藏画布的网格，勾选画布设置里的 <code class="highlighter-rouge">'Grid'</code> 设置，快捷键是 <code class="highlighter-rouge">'Option'</code> + <code class="highlighter-rouge">'G'</code>。</p>
+
+<p>PaintCode 会根据画布的底色自适应网格的颜色。不过你也可以设置你自己的网格颜色。只需要在颜色槽中选择。</p>
+
+<h2 id="画布网格">画布网格</h2>
+
+<p>画布的最后一个设置是内置的绘图网格：</p>
+
+<ul>
+  <li>iOS 图标网格布局指南</li>
+  <li>Apple Watch 图标布局指南</li>
+  <li>纵栏布局指南</li>
+  <li>横栏布局指南</li>
+  <li>纵横布局指南</li>
+</ul>
+
+<p>图标网格对于绘制外观和谐的 iOS 应用图标是非常有帮助的。</p>
+
+<p><img src="/images/icon_guide.png" alt="图标网格" /></p>
+
+<p>纵横栏布局指南则可以栏和间隔的大小，对于画一些更复杂的网格布局的绘图的时候是非常方便的。比如，这个网站就是在 Paintode 中使用网格布局设计的。</p>
+
+
+        
+      </div>
+    </div>
+  </article>
+</main>
+
+
+    <footer id="footer" class="site-footer">
+  <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+<div class="copyright">
+    
+      <p>&copy; 2019 paintcode-documents-in-chinese. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/mmistakes/so-simple-theme" rel="nofollow">So Simple</a>.</p>
+    
+  </div>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.12/js/all.js"></script>
+
+
+  </body>
+
+</html>
