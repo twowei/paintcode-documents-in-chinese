@@ -1,1 +1,1 @@
-gem 'twowei/docs-theme'
+gem ‘minima’
